@@ -1,0 +1,32 @@
+[Ilwis]
+Description=Raster Map from mask_nacional_filter.asc, using GeoGateway, method : import 
+Time=1737664034
+Version=3.1
+Class=Raster Map
+Type=BaseMap
+[BaseMap]
+CoordSystem='Z:\Geospace_2025\ALOS_2025\CRTM-05'.csy
+CoordBounds=285580 889234 660580 1242234.0000000002
+Domain=value.dom
+DomainInfo=value.dom;Long;value;0;-9999999.9:9999999.9:0.1:offset=0;
+Range=-32765:32765:offset=0
+Proximity=1000.000000
+Type=Map
+MinMax=1:1
+[Map]
+GeoRef=mask_nacional.grf
+Size=353 375
+Type=MapStore
+[MapStore]
+StoreTime=1737664035
+Data=mask_nacional.mp#
+Structure=Line
+StartOffset=0
+RowLength=375
+PixelInterLeaved=No
+SwapBytes=No
+Type=Long
+UseAs=No
+[Collection]
+NrOfItems=1
+Item0=mask_nacional.ioc

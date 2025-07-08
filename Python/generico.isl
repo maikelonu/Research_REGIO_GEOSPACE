@@ -1,0 +1,9 @@
+[Ilwis]
+Description=generico
+Time=1749057460
+Version=3.1
+Class=Script
+Type=Script
+[Script]
+ScriptFile=generico.isf
+NrParams=0

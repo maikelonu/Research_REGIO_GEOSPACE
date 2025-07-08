@@ -1,0 +1,27 @@
+[Ilwis]
+Description=GeoReference from mask_nacional_filter.asc, using GeoGateway
+Time=1737664064
+Version=3.1
+Class=GeoReference Corners
+Type=GeoRef
+[GeoRef]
+CoordSystem='Z:\Geospace_2025\ALOS_2025\CRTM-05'.csy
+Lines=353
+Columns=375
+Type=GeoRefCorners
+[GeoRefSmpl]
+a11=0.001000000000
+a12=0.000000000000
+a21=0.000000000000
+a22=-0.001000000000
+b1=-285.580000000000
+b2=1242.234000000000
+[GeoRefCorners]
+CornersOfCorners=Yes
+MinX=285580.000000
+MinY=889234.000000
+MaxX=660580.000000
+MaxY=1242234.000000
+[Collection]
+NrOfItems=1
+Item0=mask_nacional.ioc

@@ -1,0 +1,11 @@
+[Ilwis]
+Description=
+Time=1737664034
+Version=3.1
+Class=Foreign Collection
+Type=ObjectCollection
+[ObjectCollection]
+Type=Foreign Collection
+NrObjects=2
+Object0=mask_nacional.mpr
+Object1=mask_nacional.grf

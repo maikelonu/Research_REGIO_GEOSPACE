@@ -1,0 +1,25 @@
+# This MUST be done prior to any other precess, the domain MUST be changed to VALUE !!!!
+mask_barranca = cat_merge_barranca
+
+dem_barranca = iff(mask_barranca > 0, fill_base, ?)
+fill_cut_dx_barranca = MapFilter(dem_barranca, dfdx)
+fill_cut_dy_barranca = MapFilter(dem_barranca, dfdy)
+Sdegree_barranca = 100 * HYP(fill_cut_dx_barranca,fill_cut_dy_barranca)/PIXSIZE(fill_base)
+Spercent_barranca = RADDEG(ATAN(Sdegree_barranca/100))
+Spercent_barranca.his = TableHistogram(Spercent_barranca)
+
+uso_barranca = iff(dem_barranca > 0, attri_uso, ?)
+
+clay_barranca = iff(dem_barranca > 0,soilgrids_clay, ?)
+
+density_barranca = iff(dem_barranca > 0,soilgrids_density, ?)
+
+wetness_barranca = iff(dem_barranca > 0, wetness_index, ?)
+
+power_barranca = iff(dem_barranca > 0, power_index, ?)
+
+sediment_barranca = iff(dem_barranca > 0, sediment_index, ?)
+
+uno_barranca = (dem_barranca*0) + 1
+
+asc_barranca.mpr{dom=value.dom;vr=1.0:1.0:0.1} = MapResample(uno_barranca,mask_nacional.grf,nearest)
