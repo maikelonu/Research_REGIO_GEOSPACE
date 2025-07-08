@@ -1,0 +1,9 @@
+[Ilwis]
+Description=
+Time=1738602490
+Version=3.1
+Class=Script
+Type=Script
+[Script]
+ScriptFile=export_gdal_geotiff.isf
+NrParams=0
