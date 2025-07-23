@@ -310,3 +310,4 @@ blanco.xls.object <- list("mean_annual_prec" = clim.prec.1km.mean.vector,
 
 # A XLS object is exported
 write.xlsx(blanco.xls.object, file = "blanco_xls_object.xlsx", rowNames = TRUE)
+

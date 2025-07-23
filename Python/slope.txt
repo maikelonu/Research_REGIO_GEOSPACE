@@ -23,3 +23,4 @@ sediment_barranca = iff(dem_barranca > 0, sediment_index, ?)
 uno_barranca = (dem_barranca*0) + 1
 
 asc_barranca.mpr{dom=value.dom;vr=1.0:1.0:0.1} = MapResample(uno_barranca,mask_nacional.grf,nearest)
+
