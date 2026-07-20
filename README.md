@@ -9,7 +9,7 @@ Use Git to clone and install the program
 
 ## Usage
 
-Run scripts accordingly
+Run scripts accordingly 
 
 ## Contributing
 
